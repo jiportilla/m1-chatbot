@@ -2,11 +2,11 @@
 SYSTEM_ARCH := $(shell uname -m | sed -e 's/aarch64.*/arm64/' -e 's/x86_64.*/amd64/' -e 's/armv.*/arm/')
 
 # To build for an arch different from the current system, set this env var to one of the values in the comment above
-#export ARCH ?= $(SYSTEM_ARCH)
+export ARCH ?= $(SYSTEM_ARCH)
 
 
 # BADM 48030
-export ARCH ?= arm64
+#export ARCH ?= arm64
 export PORT ?= 88
 
 
